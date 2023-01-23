@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik"),
+  src: 
     url("../fonts/Rubik-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik"),
+  src:
     url("../fonts/Rubik-Semibold.ttf");
   font-weight: 600;
 }
@@ -181,7 +181,7 @@ a:hover{
 .logo {
   text-decoration: none;
   font-family: var(--font-prop);
-  font-weight:500;
+  font-weight:400;
   font-size:1rem;
   display: flex;
   flex-direction: row;
@@ -342,7 +342,7 @@ h3 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
   
-  font-weight: 500;
+  font-weight: 600;
 
 }
 
