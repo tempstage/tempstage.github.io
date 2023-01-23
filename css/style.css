@@ -1,0 +1,466 @@
+/*NEW*/
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("../fonts/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("../fonts/Rubik-Semibold.ttf");
+  font-weight: 600;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+img {
+  border-style: none;
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --basepdg-s: 3rem;
+  --sitewidth: 54rem;
+}
+
+:root {
+ --font-prop: "Rubik", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --green-d: hsl(65, 24%, 35%);
+  --green-l: hsl(65, 24%, 52%);
+
+  --beige-ul: hsl(40, 22%, 97%);
+  --beige-l: hsl(40, 22%, 95%);
+  --beige-d: hsl(40, 22%, 90%);
+  --beige-ud: hsl(40, 22%, 30%);
+  --brown-l: hsl(34, 25%, 45%);  
+  --brown-d: hsl(34, 30%, 35%);
+  --brown-ud: hsl(34, 20%, 23%);
+
+  --linkcolor: var(--green-d);
+
+}
+
+html {
+  font-size: 100%;
+  background-color: var(--clr-bg);
+  scroll-behavior:smooth
+}
+
+body {
+
+  font-family: var(--font-prop);
+  font-size: var(--font-std);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--brown-ud);
+  margin: 0 auto;
+  background-color: var(--beige-l);
+
+}
+
+header {
+  margin: 0 auto;
+  position: fixed;
+  top:.75rem;
+  left:.5rem;
+  right: .5rem;
+  z-index: 10;
+  background: rgba(250,250,250, .85);
+  box-shadow:
+  0px 0.9px 4.8px rgba(0, 0, 0, 0.035),
+  0px 7px 38px rgba(0, 0, 0, 0.07)
+;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 10px;
+}
+
+.nav_main{
+  max-width: var(--sitewidth);
+  margin: 0 auto;
+  padding: .6rem 0.75rem 0;
+  display: flex;
+  flex-direction: row;
+  gap:.35rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_main ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+
+}
+
+.product{
+  border-radius: 10px;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--brown-ud);
+  padding-bottom: .1 rem;
+  padding: .1rem .25rem;
+  text-underline-offset: 3px;
+
+}
+
+[aria-current]{
+  text-decoration: underline;
+  text-decoration-color: var(--green-l);
+
+
+}
+
+
+svg{
+  fill: var(--green-l);
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkcolor);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+.decolink{
+  display: flex;
+  flex-direction: row;
+  gap:0.15rem;
+
+}
+
+.decolink > svg{
+  fill: var(--linkcolor);
+}
+
+.logo {
+  text-decoration: none;
+  font-family: var(--font-prop);
+  font-weight:500;
+  font-size:1rem;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  
+}
+
+.logo svg{
+  height:1.75rem;
+  width:1.25rem;
+  flex-grow: 0;
+}
+
+.logo span{
+  padding-top:.25rem;
+  text-decoration-thickness: 2px;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+footer nav {
+  padding: 3rem var(--basepdg-s) 6rem;
+  max-width: var(--sitewidth);
+  margin: 0 auto;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.col {
+  flex-direction: column;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 22rem) {
+  .footer{
+
+    flex-direction: column;
+    gap:2rem;
+ 
+  }
+}
+
+.footer h4{
+  margin-bottom:1rem;
+  font-weight: 600;
+}
+
+.footer ul{
+  gap:.5rem;
+}
+
+.unstyled {
+  list-style: none;
+}
+
+
+/* -------------------
+  --------------------
+  --------------------
+-----Typography-------
+  --------------------
+  --------------------
+  ------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+
+  font-weight: 400;
+}
+
+time {
+  display: block;
+
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin:0 auto;
+  margin-bottom: .75rem;
+
+}
+
+.h2_sub{
+  font-size:1.25rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.headline_deco{
+  display: flex;
+  flex-direction: row;
+  gap:.5rem;
+  align-items: baseline;
+}
+
+.headline_deco svg{
+  display: none;
+}
+
+.marketicon{
+  height:20px;
+  width:24px;
+}
+
+.bookicon{
+  height:17px;
+  width:20px;
+}
+
+.market p {
+  display: flex;
+  flex-direction: row;
+  gap:.5rem;
+}
+
+
+
+h2 {
+  font-size: 1.25rem;
+  top: 3rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.intro p {
+  margin-top: .75rem;
+}
+
+h3 {
+  font-size: var(--font-h3);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  
+  font-weight: 500;
+
+}
+
+h4 {
+  font-size: var(--font-h4);
+  font-family:var(--font-prop);
+}
+
+a {
+  cursor: pointer;
+  text-decoration-thickness: 2px;
+}
+
+
+.linklist{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  min-width: 12rem;
+}
+
+.test{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.market_month{
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 2px dotted var(--beige-d);
+}
+
+.info p {
+  margin-bottom:1rem;
+}
+
+.info h2:not(:first-of-type){
+  margin-bottom:1.5rem;
+  margin-top:3rem;
+}
+
+
+
+.market_month h2{
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 42rem) {
+  .test{
+    flex-direction: column;
+  }
+}
+
+p {
+  max-width: 70ch;
+  line-height: 1.65;
+  word-wrap: break-word;
+}
+
+
+@media only screen and (max-width: 40rem) {
+  :root{
+    --basepdg-s: 1.25rem;
+  }
+ 
+}
+
+.klammer{
+  padding: 0 var(--basepdg-s);
+  max-width: var(--sitewidth);
+  margin: 0 auto;
+}
+
+
+.market{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
+.market_title{
+  font-size:1rem;
+  font-weight: 600;
+}
+
+.market > div{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.market > div > p:first-of-type{
+  width:4rem;
+  color:rgb(135, 130, 121);
+}
+
+.sec{
+  padding: 3rem 0;
+  border-bottom: 2px solid rgb(235, 232, 227);
+}
+
+.intro{
+  padding: 3rem 0;
+  padding-top:7rem;
+
+  background: linear-gradient(0deg, var(--beige-d) 0%, var(--beige-l) 100%);
+  background-color: var(--beige-);
+  background: var(--green-d);
+  color: var(--beige-l);
+
+
+
+}
+
+.light{
+  background-color:var(--beige-ul);
+}
+
+.dark{
+  background-color:var(--beige-d);
+}
