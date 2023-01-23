@@ -94,6 +94,7 @@ body {
 }
 
 header {
+  max-width: var(--sitewidth);
   margin: 0 auto;
   position: fixed;
   top:.75rem;
